@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <Button
+        android:id="@+id/start_training_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="81dp"
+        android:text="start"
+        app:layout_constraintBottom_toTopOf="@+id/open_workouts_button"
+        app:layout_constraintEnd_toEndOf="@+id/open_workouts_button" />
+
+    <Button
+        android:id="@+id/open_workouts_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="45dp"
+        android:text="workouts"
+        app:layout_constraintBottom_toTopOf="@+id/open_history_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/open_history_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="136dp"
+        android:text="history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/open_workouts_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
